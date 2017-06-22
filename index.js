@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 var birds = require('./birds');
 
+app.set('view engine', 'pug')
+
 app.route('/')
   .get(function (req, res) {
     res.send('Hello World');
