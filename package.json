@@ -1,0 +1,22 @@
+{
+  "name": "webappdemo",
+  "version": "0.0.1",
+  "description": "CI/CD demo app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/omrumbakitemiz/WebAppDemo.git"
+  },
+  "author": "Ömrüm Baki Temiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omrumbakitemiz/WebAppDemo/issues"
+  },
+  "homepage": "https://github.com/omrumbakitemiz/WebAppDemo#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
