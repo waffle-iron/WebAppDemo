@@ -1,9 +1,21 @@
 sudo: required
 
+services: 
+  - docker
+
 language : node_js
 
 node_js:
   - '6'
 
-services: 
-  - docker
+env:
+  COMPOSE_VERSION: 1.11.2
+
+before_install:
+ - curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+ - chmod +x docker-compose
+ - sudo mv docker-compose /usr/local/bin
+
+script:
+  - docker-compose build
+  - docker-compose run test
