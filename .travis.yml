@@ -20,8 +20,7 @@ script:
   - docker-compose build
   - docker-compose up 
 
+before_deploy: "echo 'ready?'"
+
 deploy:
   provider: azure_web_apps
-  username: "omrumbakitemiz"
-  passoword: "MRM_bk2608"
-  site: "web-app-demo"
