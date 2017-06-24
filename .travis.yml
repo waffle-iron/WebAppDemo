@@ -17,9 +17,8 @@ before_install:
  - sudo mv docker-compose /usr/local/bin
 
 script:
+  - docker-compose build
   - docker-compose up 
 
-before_deploy: "echo 'ready?'"
-
-deploy:
-  provider: azure_web_apps
+# deploy:
+#  provider: azure_web_apps
