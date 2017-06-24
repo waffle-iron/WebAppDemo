@@ -19,3 +19,9 @@ before_install:
 script:
   - docker-compose build
   - docker-compose up 
+
+deploy:
+  provider: azure_web_apps
+  username: "omrumbakitemiz"
+  passoword: "MRM_bk2608"
+  site: "web-app-demo"
