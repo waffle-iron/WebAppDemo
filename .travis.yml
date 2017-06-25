@@ -1,12 +1,6 @@
 sudo: required
-
 services: 
   - docker
-
-language : node_js
-
-node_js:
-  - '6'
 
 env:
   COMPOSE_VERSION: 1.11.2
