@@ -1,6 +1,12 @@
 sudo: required
+
 services: 
   - docker
+
+language : node_js
+
+node_js:
+  - '6'
 
 env:
   COMPOSE_VERSION: 1.11.2
@@ -13,6 +19,3 @@ before_install:
 script:
   - docker-compose build
   - docker-compose run
-
-# deploy:
-#  provider: azure_web_apps
