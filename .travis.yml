@@ -18,3 +18,14 @@ before_install:
 script:
   - mocha
   - docker-compose build
+
+notifications:
+  email:
+    recipients:
+      - omrumbakitemiz@outlook.com
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 56f062a2-242a-4f2d-9eb9-dc0e440ac099
+  on: develop
