@@ -1,10 +1,10 @@
 {
   "name": "webappdemo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CI/CD demo app.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "npm test",
     "start": "node index.js"
   },
   "repository": {
@@ -19,6 +19,6 @@
   "homepage": "https://github.com/omrumbakitemiz/WebAppDemo#readme",
   "dependencies": {
     "express": "^4.15.3",
-    "mocha": "3.4.1"
+    "mocha": "3.4.2"
   }
 }
