@@ -4,7 +4,7 @@
   "description": "CI/CD demo app.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
+    "test": "mocha",
     "start": "node index.js"
   },
   "repository": {
