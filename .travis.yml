@@ -16,5 +16,4 @@ before_install:
  - sudo mv docker-compose /usr/local/bin
 
 script:
-  - npm test
   - docker-compose build
